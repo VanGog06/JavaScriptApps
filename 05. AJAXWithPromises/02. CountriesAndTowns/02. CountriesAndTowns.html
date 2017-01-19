@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries And Towns</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="02.%20CountriesAndTowns.js"></script>
+    <style>
+        button, input {
+            margin: 10px;
+        }
+
+        select, textarea {
+            width: 50%;
+            display: table;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Countries</h1>
+
+<label for="country">Country Name:</label>
+<input type="text" id="country" />
+
+<button id="loadCountries">Load</button>
+<button id="addCountry">Add</button>
+<button id="editCountry">Edit</button>
+<button id="deleteCountry">Delete</button><br />
+
+<label for="town">Town Name:</label>
+<input type="text" id="town" />
+
+<button id="loadTowns">Load Towns</button>
+<button id="addTown">Add Town</button>
+<button id="deleteTown">Delete Town</button>
+
+<select id="countries" size="6">
+    <option>Click "Load" to load countries</option>
+</select>
+
+<select  id="towns" size="4">
+    <option>Select a country and click "Load Towns"</option>
+</select>
+
+<script>
+    attachEvents();
+</script>
+</body>
+</html>
